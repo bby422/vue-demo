@@ -17,6 +17,10 @@ module.exports = {
                 }
                 return '邮箱不合法'
             }
+        },
+        group: {
+            type: "input",
+            message: "组织"
         }
     }
 }
