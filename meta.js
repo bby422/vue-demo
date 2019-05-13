@@ -28,6 +28,10 @@ module.exports = {
                 return '邮箱不合法'
             }
         },
+        description: {
+            type: 'input',
+            message: '项目描述'
+        },
         group: {
             type: "input",
             message: "组织"
