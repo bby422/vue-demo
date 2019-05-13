@@ -18,7 +18,7 @@ module.exports = {
             type: "input",
             message: "版本",
             validate: function(_v){
-                if(/^\d+(.\d)+$/g.test(v)){
+                if(/^\d+(.\d)+$/g.test(_v)){
                     return true
                 }
                 return '版本号不合法 例：1.0.0'
