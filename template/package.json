@@ -1,10 +1,12 @@
 {
   "name": "{{ name }}",
-  "version": "0.1.0",
+  "version": "{{version}}",
   "private": true,
   "author": "{{ author }}",
   "description":"{{ description }}",
+  {{#is_belle}}
   "group": "{{group}}组织.",
+  {{/is_belle}}
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

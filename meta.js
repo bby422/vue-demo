@@ -1,7 +1,7 @@
 module.exports = {
     helpers: {
-        if_or: function(v1, v2, options) {
-            if(v1 || v2){
+        is_belle: function(group, options) {
+            if(/^belle+$/g.test(group)){
                 return options.fn(this)
             }
 
@@ -13,6 +13,16 @@ module.exports = {
         name: {
             type: "input",
             message: "项目名称"
+        },
+        version: {
+            type: "input",
+            message: "版本",
+            validate: function(_v){
+                if(/^\d+(.\d)+$/g.test(v)){
+                    return true
+                }
+                return '版本号不合法 例：1.0.0'
+            }
         },
         author: {
             type: "input",
