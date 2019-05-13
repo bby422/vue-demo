@@ -4,7 +4,7 @@ module.exports = {
             if(/^belle+$/g.test(group)){
                 return options.fn(this)
             }
-
+            console.log(options)
             //运行结果为假
             return options.inverse(this)
         }
