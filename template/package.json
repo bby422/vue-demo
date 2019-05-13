@@ -1,9 +1,10 @@
 {
-  "name": "vue-demo",
+  "name": "{{ name }}",
   "version": "0.1.0",
   "private": true,
-  "author": "bby",
-  "description":"vue-demo",
+  "author": "{{ author }}",
+  "description":"{{ description }}",
+  "group": "{{group}}组织.",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

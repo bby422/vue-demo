@@ -1,4 +1,14 @@
 module.exports = {
+    helpers: {
+        if_or: function(v1, v2, options) {
+            if(v1 || v2){
+                return options.fn(this)
+            }
+
+            //运行结果为假
+            return options.inverse(this)
+        }
+    },
     prompts: {
         name: {
             type: "input",
