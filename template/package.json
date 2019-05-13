@@ -4,7 +4,7 @@
   "private": true,
   "author": "{{ author }}",
   "description":"{{ description }}",
-  {{#is_belle}}
+  {{#is_belle group}}
   "group": "{{group}}组织.",
   {{/is_belle}}
   "scripts": {
